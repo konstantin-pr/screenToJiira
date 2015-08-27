@@ -27,14 +27,14 @@
         $rootScope = $injector.get('$rootScope'),
         $location = $injector.get('$location'),
         token = $injector.get('storage').get('token');
-        return $http.get(... token).then(
+        return true;/* $http.get(... token).then(
             function(response){
                 //return response.data.list;
             },
             function(e){
                 $rootScope.alert('Error', 'Error', function(){$location.path('/login');});
             }
-        });
+        });*/
     }];
 	
     $routeProvider

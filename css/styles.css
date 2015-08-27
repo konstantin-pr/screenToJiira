@@ -51,3 +51,11 @@ a:hover{color:#04a9f4;text-decoration:none;}
 .feed .lazy::-webkit-scrollbar{width:5px;height:5px;}
 .feed .lazy::-webkit-scrollbar-track{background-color:#aae4ff;}
 .feed .lazy::-webkit-scrollbar-thumb{background-color:#04a9f4;}
+
+
+
+/* Login view */
+
+.red_bg {
+    background: crimson;
+}
