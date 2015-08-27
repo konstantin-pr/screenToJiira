@@ -1,0 +1,7 @@
+<div class="alert">
+    <h2>{{popupData.caption}}</h2>
+	<p>{{popupData.message}}</p>
+	<div><input type="text" ng-model="popupData.value" style="width:90%;line-height:2;" /></div>
+    <br /><br />
+	<a href="javascript:void(0);" ng-click="popupClose()" title="Okay">Okay</a> | <a href="javascript:void(0);" ng-click="popupClose(true)" title="Cancel">Cancel</a>
+</div>

@@ -1,0 +1,33 @@
+<h1>
+	Feed <b>basic</b> <i>Desktop</i>
+</h1>
+
+<br />
+<br />
+
+<a href="#/home">Home</a> |
+<a href="#/feed-lazy">Lazy Feed</a> |
+
+<br />
+<br />
+
+<div class="feed">
+    <div class="bar">
+        <div class="filter">
+            <a ng-href="#/feed-basic/1/all/{{feed.options.sort}}" ng-class="{active:feed.options.filter=='all'}" title="All images"><span>All images</span></a> | 
+            <a ng-href="#/feed-basic/1/my/{{feed.options.sort}}" ng-class="{active:feed.options.filter=='my'}" title="My images"><span>My images</span></a>
+        </div>
+        <div class="pages">
+            <a ng-if="feed.prevRange.length" ng-href="#/feed-basic/{{feed.page - 1}}/{{feed.options.filter}}/{{feed.options.sort}}">Prev</a>
+            <a ng-repeat="p in feed.prevRange" ng-href="#/feed-basic/{{p}}/{{feed.options.filter}}/{{feed.options.sort}}">{{p}}</a>
+            <span ng-if="feed.pagesCount>1">{{feed.page}}</span>
+            <a ng-repeat="p in feed.nextRange" ng-href="#/feed-basic/{{p}}/{{feed.options.filter}}/{{feed.options.sort}}">{{p}}</a>
+            <a ng-if="feed.nextRange.length" ng-href="#/feed-basic/{{feed.page + 1}}/{{feed.options.filter}}/{{feed.options.sort}}">Next</a>
+        </div>
+    </div>
+    <ul class="list clearfix">
+        <li class="entry" ng-repeat="entry in feed.list" ng-click="popup.show('default.html', '<img src=&quot;'+entry.src+'&quot; style=&quot;width:100%;margin-top:-40px;&quot; />', {swipeSensitivity:50})">
+            <img ng-src="{{entry.src}}" alt="" />
+        </li>
+    </ul>
+</div>

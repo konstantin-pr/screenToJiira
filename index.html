@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:ng="http://angularjs.org" class="ng-app:app app-loading">
+<head>
+    <!--[if lt IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <![endif]-->
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Stuzo" />
+    <meta name="copyright" content="Stuzo" />
+
+    <meta name="viewport" content="width=810, target-densityDpi=device-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- meta name="apple-itunes-app" content="app-id=XXXXXXXXX" / -->
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="MobileOptimized" content="810" />    
+    
+    <link rel="apple-touch-icon" href="img/57x57.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/57x57.png" />
+    <link rel="icon" type="image/png" href="img/16x16.png" />
+    <link rel="shortcut" type="image/png" href="img/57x57.png" />
+
+    <meta property="fb:app_id" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/200x200.png" />
+	<meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+	<meta property="og:site_name" content="" />
+	
+	<!-- flexible viewport (10px == 1.0rem) -->
+	<!-- meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<script>
+		(function(){
+			var width = 640, dom = function(){document.documentElement.style.fontSize = (document.documentElement.clientWidth * 62.5 / width) + '%';};
+			window.addEventListener ? window.addEventListener('DOMContentLoaded', dom, false) : window.attachEvent('onload', dom);
+		}).call({});
+	</script -->
+    <!-- end flexible viewport -->
+
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <script>
+            document.createElement('ng-include');
+            document.createElement('ng-pluralize');
+            document.createElement('ng-view');
+            document.createElement('ng:include');
+            document.createElement('ng:pluralize');
+            document.createElement('ng:view');
+        </script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+	<script type="text/javascript" src="js/lib/angular-modern/angular.js"></script>
+	<script type="text/javascript" src="js/lib/angular-modern/angular-route.js"></script>
+	<script type="text/javascript" src="js/lib/angular-modern/angular-animate.js"></script>
+	<script type="text/javascript" src="js/lib/angular-modern/angular-mocks.js"></script>
+
+    <title></title>
+
+</head>
+<body ng-cloak="true" class="ng-cloak" ontouchstart="">
+    <div id="view" ng-view="true"></div>
+    <div class="process"><div></div></div>
+</body>
+
+<script type="text/javascript">
+window.appConfig = {
+    "fb": {
+        "appId": "",
+        "appNamespace": "",
+        "tabUrl": "",
+        "canvasUrl": "",
+        "channelUrl": "",
+        "pageUrl": "",
+        "pageId": "",
+        "currentPageId": "",
+        "permissions": "",
+        "userId": "",
+        "isFan": false,
+        "isAdmin": false,
+        "appData": "",
+        "locale": "en_US",
+        "debug": true
+    },
+    "app": {
+        "url": "http:\/\/app.stuzo.dev",
+        "version": 1,
+        "phase": 1,
+        "environment": "local",
+        "isMobile": false,
+        "gaAccount": "",
+        "gaNamespace": ""
+    },
+    "gl": {
+        "appId": "",
+        "channelUrl": "http:\/\/app.stuzo.dev\/glChannel.html"
+    },
+    "ig": {
+        "appId": "",
+        "channelUrl": "http:\/\/app.stuzo.dev\/igChannel.html"
+    },
+    "tw": {
+        "appId": "",
+        "channelUrl": "http:\/\/app.stuzo.dev\/twChannel.html"
+    }
+};
+window.appModules = function(){
+    var l = Array.prototype.slice.call(arguments, 0), i = 0;
+    l = l.length ? l : ['ngRoute', 'ngAnimate', 'ngTouch', 'ngResource', 'ngMockE2E'];
+    while(i < l.length){try{angular.module(l[i]); i++}catch(e){l.splice(i, 1);};};
+    return l;
+};
+angular.extend(window.appConfig.app, {
+    jsonPayload: false //use JSON instead of Form-urlencoded
+});
+angular.extend(window.appConfig.fb, {
+    isTab:      !!(/^app_runner/).test(window.name),
+    isCanvas:   !!(/^iframe_canvas/).test(window.name),
+    isMobile:   !!(/(^fbforiphone)|(FB4A)/).test(window.navigator.userAgent),
+    useMobile:  false,
+    detectFan:  false,
+    onInit:     function(angular){angular.bootstrap(document.documentElement, ['app']);}
+});
+(window.app || (window.app = angular.module('app', window.appModules()))).constant('config', window.appConfig);
+</script>
+
+<script type="text/javascript" src="js/lib/application.js"></script>
+<script type="text/javascript" src="js/mock/mock.js"></script>
+<script type="text/javascript" src="js/lib/video.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/instance.js"></script>
+
+<script>typeof(window['fbAsyncInit']) == 'undefined' && window.appConfig.fb.onInit(angular);</script>
+</html>

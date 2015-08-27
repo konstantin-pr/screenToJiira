@@ -1,0 +1,32 @@
+<h1>
+	Feed <b>lazy</b> <i>Desktop</i>
+</h1>
+
+<br />
+<br />
+
+<a href="#/home">Home</a> |
+<a href="#/feed-basic/1/all/recent">Basic Feed</a>
+
+<br />
+<br />
+
+<div class="feed">
+    <div class="bar">
+        <div class="filter">
+            <a href="javascript:void(0);" ng-class="{active:feed.options.filter=='all'}" ng-click="feed.getPage(1,'all')" title="All images"><span>All images</span></a> | 
+            <a href="javascript:void(0);" ng-class="{active:feed.options.filter=='my'}" ng-click="feed.getPage(1,'my')" title="My images"><span>My images</span></a>
+        </div>
+    </div>
+	<div class="lazy" app-lazy="feed">
+		<ul class="list clearfix">
+			<li class="entry" ng-repeat="entry in feed.list" ng-click="popup.show('default.html', '<img src=&quot;'+entry.src+'&quot; style=&quot;width:100%;margin-top:-40px;&quot; />', {swipeSensitivity:50})">
+				<img ng-src="{{entry.src}}" alt="" />
+			</li>
+		</ul>
+		<div class="spinner" ng-show="feed.pageIsWaiting" ng-class="{overlay:!feed.list.length}"></div>
+	</div>
+</div>
+
+<br />
+<br />
