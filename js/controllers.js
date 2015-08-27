@@ -25,13 +25,15 @@
 .controller('upload', ['$injector', '$scope', function($injector, $scope){
     var
     $config    = $injector.get('config');
-    $route    = $injector.get('$route');
-    /*$storage	= $injector.get('storage');*/
-
-    $scope.taskId = $route.params.id;
+//    $route    = $injector.get('$route');
+//    /*$storage	= $injector.get('storage');*/
+//
+//    $scope.taskId = $route.params.id;
     
 //    "!http://...imageUrl|width=800!"
-
+    $scope.submit = function(){
+        console.log('submit was successful');
+    }
 }]);
 
 //------------------------------------------------------ end

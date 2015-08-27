@@ -15,7 +15,6 @@
         $storage = $injector.get('storage'),
         $location = $injector.get('$location'),
         token = $storage.get('token');
-
         if(!token){
             $location.path('/login');
         };
@@ -39,9 +38,8 @@
 	
     $routeProvider
     .when('/login', {templateUrl: 'html/login.html', controller:'login'})
-    .when('/tasks', {templateUrl: 'html/tasks.html', controller:'tasks', resolve:{auth:auth, list:list}})
-    .when('/list', {templateUrl: 'html/list.html'})
-	.when('/upload/:id', {templateUrl: 'html/upload.html', controller:'upload', resolve:{auth: auth}})
+    .when('/tasks', {templateUrl: 'html/tasks.html'}) /* , controller:'tasks'  resolve:{auth:auth, list:list}}*/
+	.when('/upload/:id', {templateUrl: 'html/upload.html', controller:'upload'}) /*  resolve:{auth: auth} */
     // .when('/thankyou', {templateUrl: 'html/thankyou.html', controller:'thankyou'})
     .otherwise({redirectTo: '/login'});
 }])
