@@ -1,3 +1,4 @@
+
 html{width:100%;height:100%;background-color:#ffffff;}
 body{font-size:12px;font-family:sans-serif;color:#000000;background-color:#ffffff;line-height:1.2;position:relative;overflow-x:hidden!important;min-height:100%;-webkit-text-size-adjust:none;}
 html.app-loading{background:#ffffff url(../img/app-loading.gif) no-repeat center center;}
@@ -62,32 +63,28 @@ a:hover{color:#04a9f4;text-decoration:none;}
     background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
     background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
     background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+    font-family: "Droid Sans", sans-serif;
 }
 
 
 /* Login view .app-route-login  */
 
-.red_bg {
-    background: crimson;
-}
-
-.inner-form-block{
+.content {
     max-width:500px;
     background: #f3f3f3;
-    height: 400px;
+    margin: auto;
+}
+
+.inner-form-block {
+    height: 220px;
+    margin: 0 auto 100px;
 }
 
 .screen-main-form {
     padding: 40px;
 }
 
-.item-issue{
-    border: 1px solid green;
-    border-radius: 5px;
-    margin: 14px;
-}
-
-.row.align-center {
+.align-center {
     text-align: center;
 }
 
@@ -109,7 +106,54 @@ p.item-copy{
     color: #fff;
 }
 
-.app-route-login h1{
-    color: darkgreen;
+.app-route-login .wrapper h1,
+.app-route-tasks .wrapper h1,
+.app-route-upload .wrapper h1
+{
+    color: #f3f3f3;
+    padding: 20px 0;
 }
 
+/* Tasks view */
+.list-wrapper {
+    padding: 20px 30px;
+}
+
+.list-wrapper li {
+    padding: 20px 0;
+    line-height: 22px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-wrapper li:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+/* Upload view */
+.attach-img {
+    display: block;
+    width: 200px;
+    height: 30px;
+}
+
+.submit-img {
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.upload-form {
+    width: 340px;
+    padding-top: 80px;
+}
+
+.upload-file-container {
+    /*background: url(../img/inputfile.jpg) -9px -50px no-repeat;*/
+    border: 1px solid blue;
+}
+
+.upload-file-container input {
+    /*filter: alpha(opacity=0);*/
+    /*opacity: 0;*/
+}

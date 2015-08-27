@@ -1,7 +1,14 @@
 <div class="wrapper">
-    <form ng-submit="submit()" ng-controller="upload">
-        Select your screenshot
-        <input type="file" ng-model="text" name="file" />
-        <input type="submit" id="submit" value="Submit" />
-    </form>
+    <div class="row align-center">
+        <h1>Attach screenshot</h1>
+        <div class="content inner-form-block">
+                <form ng-submit="submit()" ng-controller="upload" class="align-center upload-form">
+                    <div class = "upload-file-container">
+                        <input type="file" ng-model="text" name="image" class="attach-img" />
+                    </div>
+                    <button type="submit" id="submit" class="submit-img btn btn-success"> Attach to task </button>
+                </form>
+
+        </div>
+    </div>
 </div>
