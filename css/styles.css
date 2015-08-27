@@ -5,7 +5,7 @@ html.app-loading body{visibility:hidden;}
 a{text-decoration:none;color:#000000;-webkit-tap-highlight-color:transparent;}
 a:hover{color:#000000;}
 
-#view{width:810px;margin:0px auto;position:relative;}
+#view{max-width:810px;margin:0px auto;position:relative;}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak{visibility:hidden;}
 .notext, .notext *{font-size:0px!important;text-shadow:none!important;white-space:nowrap!important;text-indent:-9999px!important;line-height:0px!important;overflow:hidden!important;color:transparent!important;}
 .clearfix{display:block} * html .clearfix{height:1%} .clearfix:after,.clear {content:".";display:block;height:0;clear:both;visibility:hidden;} .clearfix{display:inline-block}
@@ -33,7 +33,7 @@ html.app-process .process{display:block;}
 
 /* CURRENT APP STYLES */
 body{font-size:16px;}
-h1{color:#f0f0f0;font-size:152px;line-height:160px;margin:0 0 50px 0;position:relative;text-indent:200px;background:transparent url(../img/200x200.png) no-repeat left center;}
+h1{color:#f0f0f0;font-size:152px;line-height:160px;margin:0 0 50px 0;position:relative;text-indent:200px;/*background:transparent url(../img/200x200.png) no-repeat left center;*/}
 h1 > b{position:absolute;left:0px;bottom:5px;color:#0079bd;font-size:41px;line-height:41px;font-weight:normal;}
 h1 > i{position:absolute;left:80px;top:50px;color:#0079bd;font-size:20px;line-height:20px;font-weight:normal;font-style:normal;}
 p{margin:15px 0;line-height:1.2;}
@@ -58,4 +58,13 @@ a:hover{color:#04a9f4;text-decoration:none;}
 
 .red_bg {
     background: crimson;
+
+}
+.inner-form-block{
+    max-width:500px;
+    background-color:#ccc;
+}
+
+.screen-main-form{
+    padding: 40px;
 }
