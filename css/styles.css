@@ -57,7 +57,7 @@ a:hover{color:#04a9f4;text-decoration:none;}
 
 .wrapper, #view
 {
-    width: 640px;
+    
     background: rgba(212,228,239,1);
     background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
@@ -123,7 +123,7 @@ a:hover{color:#04a9f4;text-decoration:none;}
 /* Login view .app-route-login  */
 
 .content {
-    max-width:500px;
+    max-width: 90%;
     background: #f3f3f3;
     margin: auto;
 }
