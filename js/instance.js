@@ -26,7 +26,8 @@
         $rootScope = $injector.get('$rootScope'),
         $location = $injector.get('$location'),
         token = $injector.get('storage').get('token');
-        return true;/* $http.get(... token).then(
+        return true;
+        /* $http.get(... token).then(
             function(response){
                 //return response.data.list;
             },
@@ -53,8 +54,7 @@
     $tools     = $injector.get('tools'),
     $popup     = $injector.get('popup'),
     $timeout   = $injector.get('$timeout'),
-    $rootScope = $injector.get('$rootScope');
-    
+    $rootScope = $injector.get('$rootScope'); 
     $rootScope.config = $config;
     
     // Auto scroll to top
@@ -63,7 +63,7 @@
     // Process
     // Show / Hide fullscreen preloader
     $rootScope.process = function(value){$timeout(function(){$rootScope.tags.set('process', Boolean(value));});};
-    
+ 
     // Popups example. How to create two and more kind of popups
 	// $popup.create(popup folder path, [scope (default $rootScope), skin (default path/skin.html), default options]);
 	// Developer, please use CSS to stylize popups. For example if you want to make the unique style for alert.html only.

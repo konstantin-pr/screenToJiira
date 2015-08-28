@@ -1,8 +1,9 @@
 <div class="wrapper">
     <div class="row align-center">
         <h1>Attach screenshot</h1>
-        <div class="content inner-form-block">
-                <form ng-submit="submit()" ng-controller="upload" class="align-center upload-form">
+        <div class="content inner-form-block upload-form">
+                <a class="btn btn-info back-to-tasks" ng-click="backToTasks()" href="javascript:void(0)">&lt; Back to tasks</a>
+                <form ng-submit="submit()" ng-controller="upload" class="clearfix align-center upload-form">
                     <div class = "upload-file-container">
                         <input type="file" ng-model="text" name="image" class="attach-img" />
                     </div>

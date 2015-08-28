@@ -110,7 +110,7 @@ p.item-copy{
 .app-route-tasks .wrapper h1,
 .app-route-upload .wrapper h1
 {
-    color: #f3f3f3;
+    color: #fff;
     padding: 20px 0;
 }
 
@@ -130,6 +130,11 @@ p.item-copy{
     background-color: #f7f7f7;
 }
 
+.back-to-tasks {
+    position: absolute;
+    left:20px; top:10px;
+}
+
 /* Upload view */
 .attach-img {
     display: block;
@@ -144,8 +149,8 @@ p.item-copy{
 }
 
 .upload-form {
-    width: 340px;
-    padding-top: 80px;
+    padding: 40px 20px; 
+    position: relative;
 }
 
 .upload-file-container {
