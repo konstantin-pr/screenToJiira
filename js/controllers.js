@@ -29,8 +29,11 @@
     /*$storage	= $injector.get('storage');*/
 
    /* $scope.tasks = list;*/
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
     $scope.goToUploadView = function(){
-        $location.path('/upload/23');
+        $location.path('/upload/'+ getRandomArbitrary(1, 50));
     }
 }])
 
