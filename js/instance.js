@@ -38,7 +38,7 @@
 	
     $routeProvider
     .when('/login', {templateUrl: 'html/login.html', controller:'login'})
-    .when('/tasks', {templateUrl: 'html/tasks.html'}) /* , controller:'tasks'  resolve:{auth:auth, list:list}}*/
+    .when('/tasks', {templateUrl: 'html/tasks.html', controller:'tasks'}) /* , controller:'tasks'  resolve:{auth:auth, list:list}}*/
 	.when('/upload/:id', {templateUrl: 'html/upload.html', controller:'upload'}) /*  resolve:{auth: auth} */
     // .when('/thankyou', {templateUrl: 'html/thankyou.html', controller:'thankyou'})
     .otherwise({redirectTo: '/login'});
