@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9003f07-b1ff-404b-b74e-531614f16ab1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bug.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/newfeature.png" />
       <change type="DELETED" beforePath="C:\OpenServer\domains\screenToJira\screenToJiira\html\home.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/instance.js" afterPath="$PROJECT_DIR$/js/instance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/login.html" afterPath="$PROJECT_DIR$/html/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/tasks.html" afterPath="$PROJECT_DIR$/html/tasks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="screenToJiira.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tasks.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tasks.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/tasks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="23" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1190">
+            <state line="29" column="94" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.73802394" vertical-offset="0" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -57,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="0.09044586" vertical-offset="184" max-vertical-offset="969">
+            <state line="15" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -133,17 +132,17 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/html/login.html" />
         <option value="$PROJECT_DIR$/js/instance.js" />
-        <option value="$PROJECT_DIR$/html/tasks.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/html/tasks.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="830" />
-    <option name="y" value="75" />
+    <option name="x" value="352" />
+    <option name="y" value="173" />
     <option name="width" value="1682" />
-    <option name="height" value="946" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -303,7 +302,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="830" y="75" width="1682" height="946" extended-state="1" />
+    <frame x="352" y="173" width="1682" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -385,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/tasks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="57" selection-start="2022" selection-end="2026" vertical-scroll-proportion="-4.7843137" vertical-offset="436" max-vertical-offset="2635">
@@ -410,7 +402,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="0.09044586" vertical-offset="184" max-vertical-offset="969">
+        <state line="15" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="94" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.73802394" vertical-offset="0" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
