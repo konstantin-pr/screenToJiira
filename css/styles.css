@@ -150,7 +150,8 @@ p.item-copy{
 
 .upload-file-container {
     /*background: url(../img/inputfile.jpg) -9px -50px no-repeat;*/
-    border: 1px solid blue;
+    
+    padding-left: 73px;
 }
 
 .upload-file-container input {
