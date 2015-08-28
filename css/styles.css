@@ -99,6 +99,7 @@ a:hover{color:#04a9f4;text-decoration:none;}
 .popup-content .warning h2 {
     background: #f0ad4e;
 }
+
 .btn.btn-warning {
 
 }
@@ -128,7 +129,7 @@ a:hover{color:#04a9f4;text-decoration:none;}
 }
 
 .inner-form-block {
-    height: 220px;
+    min-height: 220px;
     margin: 0 auto 100px;
 }
 
@@ -149,6 +150,19 @@ p.item-copy{
     text-transform: lowercase;
     font-size:15px;
 }
+
+  .screen-main-form input.ng-invalid.ng-touched {
+    -webkit-box-shadow: inset -1px -1px 10px 0px rgba(245,8,8,0.52);
+    -moz-box-shadow: inset -1px -1px 10px 0px rgba(245,8,8,0.52);
+    box-shadow: inset -1px -1px 10px 0px rgba(245,8,8,0.52);
+  }
+
+  .screen-main-form input.ng-valid.ng-touched {
+   -webkit-box-shadow: inset -1px -1px 10px 0px rgba(116,245,10,1);
+    -moz-box-shadow: inset -1px -1px 10px 0px rgba(116,245,10,1);
+    box-shadow: inset -1px -1px 10px 0px rgba(116,245,10,1);
+  }
+
 
 .app-route-login .wrapper .screen-main-form .form-group .login-btn {
     width: 200px;

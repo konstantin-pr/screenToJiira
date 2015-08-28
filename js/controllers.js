@@ -11,9 +11,15 @@
     $location = $injector.get('$location'),
 	$storage	= $injector.get('storage');
 	//$location.path('/tasks')
-  $scope.goTolist = function(){
+
+  $scope.goTolist = function(loginForm){
+      console.log(loginForm);
+      console.log(loginForm.$valid);
+      
       $location.path('/tasks');
+
   }
+
 }])
 
 .controller('tasks', ['$injector', '$scope', /*'list'*/ function($injector, $scope /*list*/){
@@ -32,15 +38,17 @@
     var
     $config    = $injector.get('config'),
     $location = $injector.get('$location');
-    //$rootScope = $injector.get('$rootScope');
 //    $route    = $injector.get('$route');
-//    /*$storage	= $injector.get('storage');*/
+
 //
 //    $scope.taskId = $route.params.id; 
- 
-    $scope.submit = function(){
-        //$rootScope.modal.show('success.html', {message:'Screenshot have been attached!', caption:'Success'});
-        $rootScope.modal.show('warning.html', {message:'Please upload file', caption:'Warning'}); 
+    $scope.submit = function(upload_form){
+        console.log('image now', typeof(upload_form.image));
+        if (typeof(upload_form.image)=='string'){
+            $rootScope.modal.show('success.html', {message:'Screenshot have been attached!', caption:'Success'});
+        } else {
+            $rootScope.modal.show('warning.html', {message:'Please upload file', caption:'Warning'});
+        }
     }
 
     $scope.backToTasks = function(){

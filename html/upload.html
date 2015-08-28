@@ -3,13 +3,12 @@
         <h1>Attach screenshot</h1>
         <div class="content inner-form-block upload-form">
                 <a class="btn btn-info back-to-tasks" ng-click="backToTasks()" href="javascript:void(0)">&lt; Back to tasks</a>
-                <form ng-submit="submit()" ng-controller="upload" class="clearfix align-center upload-form">
+                <form novalidate name="upload_form" ng-submit="submit(upload_form)" ng-controller="upload" class="clearfix align-center upload-form">
                     <div class = "upload-file-container">
-                        <input type="file" ng-model="text" name="image" class="attach-img" />
+                        <input type="file" accept="image/*" app-filereader name="image" ng-model="upload_form.image" class="attach-img" />
                     </div>
-                    <button type="submit" id="submit" class="submit-img btn btn-success"> Attach to task </button>
+                    <button type="submit" ng-show="upload_form.image" id="submit" class="submit-img btn btn-success"> Attach to task </button>
                 </form>
-
         </div>
     </div>
 </div>
