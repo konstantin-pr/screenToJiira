@@ -39,9 +39,8 @@
 //    $scope.taskId = $route.params.id; 
  
     $scope.submit = function(){
-        $rootScope.alert("Screenshot have been attached!");
-        /* if ng model file; file*/
-         
+        //$rootScope.modal.show('success.html', {message:'Screenshot have been attached!', caption:'Success'});
+        $rootScope.modal.show('warning.html', {message:'Please upload file', caption:'Warning'}); 
     }
 
     $scope.backToTasks = function(){
